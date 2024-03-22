@@ -49,7 +49,7 @@ def calculate_loss(epoch_log_probability_actions: torch.Tensor,
 def policy_gradient_center(env: gym.Env,
 													 model: nn.Module,
 													 optimizer: Optimizer,
-										       max_rollouts = 200) -> float:
+										       max_rollouts = 20) -> float:
 	#discount factor
 	discount = 0.99
 
